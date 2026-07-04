@@ -1,5 +1,10 @@
-NAME        REFERENCE              TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
-guestbook   Deployment/guestbook   0%/5%      1         10        1          2m
-guestbook   Deployment/guestbook   15%/5%     1         10        1          3m
-guestbook   Deployment/guestbook   15%/5%     1         10        3          3m15s
-guestbook   Deployment/guestbook   12%/5%     1         10        4          4m
+NAME        REFERENCE              TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   0%/5%     1         10        1          2m
+guestbook   Deployment/guestbook   15%/5%    1         10        1          3m
+guestbook   Deployment/guestbook   15%/5%    1         10        3          3m15s
+guestbook   Deployment/guestbook   12%/5%    1         10        4          4m
+
+Events:
+  Type    Reason             Age   From                       Message
+  ----    ------             ----  ----                       -------
+  Normal  SuccessfulRescale  1m    horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
