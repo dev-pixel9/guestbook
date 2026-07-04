@@ -3,7 +3,7 @@ Pod Template:
   Labels:	app=guestbook
   Containers:
    guestbook:
-    Image:	us.icr.io/dev-pixel9/guestbook:v1
+    Image:	us.icr.io/sn-labs-dev-pixel9/guestbook:v1
     Port:	3000/TCP
     Host Port:	0/TCP
     Limits:
